@@ -1,0 +1,10 @@
+{
+    "name": "pin-and-slide",
+    "builds": {
+        "module": {
+            "jsfiles": [
+                "./js/pin-and-slide.js"
+            ]
+        }
+    }
+}
