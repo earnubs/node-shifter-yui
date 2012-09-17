@@ -14,7 +14,7 @@ app.get('/', function(req, res){
 app.get('/yui3', combo.combine({rootPath: 'yui3'}), function (req, res) {
         res.send(res.body, 200);
 });
-app.get('/yui3-u1', combo.combine({rootPath: 'yui3'}), function (req, res) {
+app.get('/yui3-u1', combo.combine({rootPath: 'yui3-u1'}), function (req, res) {
         res.send(res.body, 200);
 });
 

@@ -1,8 +1,0 @@
-{
-    "pin-and-slide": {
-        "use": [
-            "widget",
-            "substitute",
-            "event-resize"
-        ]
-}

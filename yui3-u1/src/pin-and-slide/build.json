@@ -1,0 +1,17 @@
+{
+    "name": "pin-and-slide",
+    "builds": {
+        "u1-pin-and-slide": {
+            "jsfiles": [
+                "./js/pin-and-slide.js"
+            ],
+            "config": {
+                "requires": [
+                    "widget",
+                    "substitute",
+                    "event-resize"
+                ]
+            }
+        }
+    }
+}

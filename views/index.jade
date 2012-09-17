@@ -3,6 +3,24 @@ html(lang='en')
   head
     title= title
     script(src='/yui3?build/yui/yui-min.js')
+    script 
+      YUI({
+        comboBase: '/yui3?',
+        combine: true,
+        root: 'build/',
+        groups: {
+          u1: {
+            comboBase: '/yui3-u1?',
+            combine: true,
+            root: 'build/',
+            patterns: {
+              'u1': {},
+              'u1css-': { type: 'css' }
+            }
+          }
+        }
+      }).use('widget', 'u1-pin-and-slide', function (Y) {
+      });
   body
     h1= title 
     p check the console...
