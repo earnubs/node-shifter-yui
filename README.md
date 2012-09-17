@@ -8,3 +8,4 @@ Install Nodejs on Ubuntu:
     // if you install any modules with -g remember to add to PATH
     // shifter is the only one that needs -g (global) install 
     export NODE_PATH=/usr/lib/node_modules/
+    sudo npm install -g shifter
