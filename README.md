@@ -17,6 +17,7 @@ build all modules
     shifter --walk
 
 build current module
+
     cd yui3-u1/src/multi-component-pattern
     shifter --watch // build current module
 
