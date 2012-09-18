@@ -16,10 +16,10 @@ build all modules
     cd yui3-u1
     shifter --walk
 
-build current module
+build current module and build on further changes
 
     cd yui3-u1/src/multi-component-pattern
-    shifter --watch // build current module
+    shifter --watch
 
 
 See https://github.com/yui/shifter
