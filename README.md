@@ -20,6 +20,10 @@ build current module and build on further changes
 
     cd yui3-u1/src/multi-component-pattern
     shifter --watch
+    
+add a version number to your module(s)
+    
+    shifter --replace-version=0.1
 
 
 See https://github.com/yui/shifter
