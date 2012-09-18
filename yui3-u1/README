@@ -1,3 +1,4 @@
 The U1 YUI Module Library
 
-Running shifter on the modules in src/ will create a build/ folder at this level containing the relevant modules, look back here after you run shifter
+Running shifter on the modules in src/ will create a build/ folder at
+this level containing the relevant modules, look back here after you run shifter
