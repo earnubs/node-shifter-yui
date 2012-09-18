@@ -1,0 +1,29 @@
+{
+    "name": "musicstore",
+    "builds": {
+        "one-musicstore-status": {
+            "jsfiles": [
+                "./js/status.js"
+            ],
+            "config": {
+                "requires": [
+                    "widget",
+                    "substitute",
+                    "event-resize"
+                ]
+            }
+        },
+        "one-musicstore-basket": {
+            "jsfiles": [
+                "./js/basket.js"
+            ],
+            "config": {
+                "requires": [
+                    "widget",
+                    "substitute",
+                    "event-resize"
+                ]
+            }
+        }
+    }
+}
