@@ -25,5 +25,9 @@ add a version number to your module(s)
     
     shifter --replace-version=0.1
 
+to get the YUI3 submodule
+
+    git submodule init
+    git submodule update
 
 See https://github.com/yui/shifter
