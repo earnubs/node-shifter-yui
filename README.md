@@ -13,7 +13,7 @@ shifter is the only one that needs -g (global) install
 
 build all modules
 
-    cd yui3-u1
+    cd yui3-u1/src
     shifter --walk
 
 build current module and build on further changes
