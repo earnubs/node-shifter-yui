@@ -24,10 +24,12 @@ html(lang='en')
               }
             },
             // pattern based module loading, combohandler won't group these
+            /**
             patterns: {
               'my-': {},
               'mycss-': { type: 'css' }
             }
+            **/
           }
         }
       }).use('widget', 'my-module-bar', function (Y) {
