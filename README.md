@@ -13,13 +13,21 @@ shifter is the only one that needs -g (global) install
 
 build all modules
 
-    cd yui3-u1
+    cd yui3-u1/src
     shifter --walk
 
 build current module and build on further changes
 
     cd yui3-u1/src/multi-component-pattern
     shifter --watch
+    
+add a version number to your module(s)
+    
+    shifter --replace-version=0.1
 
+to get the YUI3 submodule
+
+    git submodule init
+    git submodule update
 
 See https://github.com/yui/shifter
