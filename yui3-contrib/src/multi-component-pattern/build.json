@@ -1,9 +1,9 @@
 {
-    "name": "musicstore",
+    "name": "my-module",
     "builds": {
-        "one-musicstore-status": {
+        "my-module-foo": {
             "jsfiles": [
-                "./js/status.js"
+                "./js/foo.js"
             ],
             "config": {
                 "requires": [
@@ -13,15 +13,13 @@
                 ]
             }
         },
-        "one-musicstore-basket": {
+        "my-module-bar": {
             "jsfiles": [
-                "./js/basket.js"
+                "./js/bar.js"
             ],
             "config": {
                 "requires": [
-                    "widget",
-                    "substitute",
-                    "event-resize"
+                    "my-module-foo"
                 ]
             }
         }

@@ -3,24 +3,27 @@ html(lang='en')
   head
     title= title
     script(src='/yui3?build/yui/yui-min.js')
-    script 
+    script
       YUI({
         comboBase: '/yui3?',
         combine: true,
         root: 'build/',
         groups: {
-          u1: {
-            comboBase: '/yui3-u1?',
+          contrib: {
+            comboBase: '/yui3-contrib?',
             combine: true,
-            root: 'build/',
-            patterns: {
-              'one-': {},
-              'onecss-': { type: 'css' }
+            root: '/build/',
+            modules: {
+              'my-module-bar': {
+                requires: ['widget', 'substitute', 'event-resize']
+              },
+              'my-module-foo': {
+                requires: ['my-module-bar']
+              }
             }
           }
         }
-      }).use('one-pin-and-slide', function (Y) {
-        // do stuff
+      }).use('widget', 'my-module-foo', function (Y) {
       });
   body
     h1= title 
