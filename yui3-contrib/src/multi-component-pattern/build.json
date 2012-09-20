@@ -4,14 +4,7 @@
         "my-module-foo": {
             "jsfiles": [
                 "./js/foo.js"
-            ],
-            "config": {
-                "requires": [
-                    "widget",
-                    "substitute",
-                    "event-resize"
-                ]
-            }
+            ]
         },
         "my-module-bar": {
             "jsfiles": [

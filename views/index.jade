@@ -10,21 +10,18 @@ html(lang='en')
         root: 'build/',
         groups: {
           contrib: {
-            comboBase: '/yui3-contrib?',
-            combine: true,
-            root: '/build/',
+            base: '/yui3-contrib?build/',
             // explicitly list the modules and deps, this improves combohandler bundling of
             // script requests
             modules: {
               'my-module-bar': {
-                requires: ['widget', 'substitute', 'event-resize']
+                requires: ['my-module-bar']
               },
               'my-module-foo': {
-                requires: ['my-module-bar']
               }
             },
-            // pattern based module loading, combohandler won't group these
             /**
+            // pattern based module loading, combohandler won't group these
             patterns: {
               'my-': {},
               'mycss-': { type: 'css' }
@@ -32,7 +29,7 @@ html(lang='en')
             **/
           }
         }
-      }).use('widget', 'my-module-bar', function (Y) {
+      }).use('my-module-bar', function (Y) {
       });
   body
     h1= title 
