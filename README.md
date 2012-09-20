@@ -2,6 +2,7 @@ See https://github.com/yui/shifter for YUI Shifter, the Node based YUI module bu
 
 This is a complete locally hosted YUI with your own YUI module lib (yui-contrib), built with Shifter (https://github.com/yui/shifter) and served with Combohandler (https://github.com/rgrove/combohandler). It might be useful to you, it might not :)
 
+Adding modules into the same combobase as yui will allow them to be combo loaded in the same script request as yui modules, minimising req's further.
 
 Install Nodejs on Ubuntu:
 
