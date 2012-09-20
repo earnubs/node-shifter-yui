@@ -15,6 +15,11 @@
                     "my-module-foo"
                 ]
             }
+        },
+        "my-module-baz": {
+            "jsfiles": [
+                "./js/baz.js"
+            ]
         }
     }
 }
