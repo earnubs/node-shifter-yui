@@ -13,6 +13,8 @@ html(lang='en')
             comboBase: '/yui3-contrib?',
             combine: true,
             root: '/build/',
+            // explicitly list the modules and deps, this improves combohandler bundling of
+            // script requests
             modules: {
               'my-module-bar': {
                 requires: ['widget', 'substitute', 'event-resize']
@@ -20,10 +22,15 @@ html(lang='en')
               'my-module-foo': {
                 requires: ['my-module-bar']
               }
+            },
+            // pattern based module loading, combohandler won't group these
+            patterns: {
+              'my-': {},
+              'mycss-': { type: 'css' }
             }
           }
         }
-      }).use('widget', 'my-module-foo', function (Y) {
+      }).use('widget', 'my-module-bar', function (Y) {
       });
   body
     h1= title 
