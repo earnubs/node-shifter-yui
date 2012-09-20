@@ -1,6 +1,6 @@
 See https://github.com/yui/shifter for YUI Shifter, the Node based YUI module builder.
 
-This is a complete locally hosted YUI with your own YUI module lib, built with Shifter (https://github.com/yui/shifter) and served with Combohandler (https://github.com/rgrove/combohandler). It might be useful to you, it might not :)
+This is a complete locally hosted YUI with your own YUI module lib (yui-contrib), built with Shifter (https://github.com/yui/shifter) and served with Combohandler (https://github.com/rgrove/combohandler). It might be useful to you, it might not :)
 
 
 Install Nodejs on Ubuntu:
